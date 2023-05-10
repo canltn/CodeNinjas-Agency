@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "1fcdb577-613b-4021-b68e-b77fc982d1d8",
+		"_postman_id": "ad8002a1-0b68-4e40-9f70-c4dce6df0611",
 		"name": "FSND-Capstone Heroku",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -93,13 +93,11 @@
 							}
 						},
 						"url": {
-							"raw": "https://ry-fsnd-capstone.herokuapp.com/actors/37",
-							"protocol": "https",
+							"raw": "{{host}}:{{port}}/actors/37",
 							"host": [
-								"ry-fsnd-capstone",
-								"herokuapp",
-								"com"
+								"{{host}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"actors",
 								"37"
@@ -114,13 +112,11 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://ry-fsnd-capstone.herokuapp.com/actors/37",
-							"protocol": "https",
+							"raw": "{{host}}:{{port}}/actors/37",
 							"host": [
-								"ry-fsnd-capstone",
-								"herokuapp",
-								"com"
+								"{{host}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"actors",
 								"37"
@@ -135,13 +131,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://ry-fsnd-capstone.herokuapp.com/movies",
-							"protocol": "https",
+							"raw": "{{host}}:{{port}}/movies",
 							"host": [
-								"ry-fsnd-capstone",
-								"herokuapp",
-								"com"
+								"{{host}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"movies"
 							]
@@ -155,13 +149,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://ry-fsnd-capstone.herokuapp.com/movies/1",
-							"protocol": "https",
+							"raw": "{{host}}:{{port}}/movies/1",
 							"host": [
-								"ry-fsnd-capstone",
-								"herokuapp",
-								"com"
+								"{{host}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"movies",
 								"1"
@@ -185,13 +177,11 @@
 							}
 						},
 						"url": {
-							"raw": "https://ry-fsnd-capstone.herokuapp.com/movies",
-							"protocol": "https",
+							"raw": "{{host}}:{{port}}/movies",
 							"host": [
-								"ry-fsnd-capstone",
-								"herokuapp",
-								"com"
+								"{{host}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"movies"
 							]
@@ -214,13 +204,11 @@
 							}
 						},
 						"url": {
-							"raw": "https://ry-fsnd-capstone.herokuapp.com/movies/17",
-							"protocol": "https",
+							"raw": "{{host}}:{{port}}/movies/17",
 							"host": [
-								"ry-fsnd-capstone",
-								"herokuapp",
-								"com"
+								"{{host}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"movies",
 								"17"
@@ -235,13 +223,11 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://ry-fsnd-capstone.herokuapp.com/movies/17",
-							"protocol": "https",
+							"raw": "{{host}}:{{port}}/movies/17",
 							"host": [
-								"ry-fsnd-capstone",
-								"herokuapp",
-								"com"
+								"{{host}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"movies",
 								"17"
@@ -265,7 +251,6 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "678ba9da-6cef-4325-b719-77d55a50d62a",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -275,15 +260,13 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "82528aa5-9672-494c-9ce6-c268527443ec",
 						"type": "text/javascript",
 						"exec": [
 							""
 						]
 					}
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Manager",
@@ -294,13 +277,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://ry-fsnd-capstone.herokuapp.com/actors",
-							"protocol": "https",
+							"raw": "{{host}}:{{port}}/actors",
 							"host": [
-								"ry-fsnd-capstone",
-								"herokuapp",
-								"com"
+								"{{host}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"actors"
 							]
@@ -314,13 +295,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://ry-fsnd-capstone.herokuapp.com/actors/2",
-							"protocol": "https",
+							"raw": "{{host}}:{{port}}/actors/2",
 							"host": [
-								"ry-fsnd-capstone",
-								"herokuapp",
-								"com"
+								"{{host}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"actors",
 								"2"
@@ -344,13 +323,11 @@
 							}
 						},
 						"url": {
-							"raw": "https://ry-fsnd-capstone.herokuapp.com/actors",
-							"protocol": "https",
+							"raw": "{{host}}:{{port}}/actors",
 							"host": [
-								"ry-fsnd-capstone",
-								"herokuapp",
-								"com"
+								"{{host}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"actors"
 							]
@@ -373,13 +350,11 @@
 							}
 						},
 						"url": {
-							"raw": "https://ry-fsnd-capstone.herokuapp.com/actors/38",
-							"protocol": "https",
+							"raw": "{{host}}:{{port}}/actors/38",
 							"host": [
-								"ry-fsnd-capstone",
-								"herokuapp",
-								"com"
+								"{{host}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"actors",
 								"38"
@@ -394,13 +369,11 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://ry-fsnd-capstone.herokuapp.com/actors/38",
-							"protocol": "https",
+							"raw": "{{host}}:{{port}}/actors/38",
 							"host": [
-								"ry-fsnd-capstone",
-								"herokuapp",
-								"com"
+								"{{host}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"actors",
 								"38"
@@ -415,13 +388,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://ry-fsnd-capstone.herokuapp.com/movies",
-							"protocol": "https",
+							"raw": "{{host}}:{{port}}/movies",
 							"host": [
-								"ry-fsnd-capstone",
-								"herokuapp",
-								"com"
+								"{{host}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"movies"
 							]
@@ -435,13 +406,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://ry-fsnd-capstone.herokuapp.com/movies/1",
-							"protocol": "https",
+							"raw": "{{host}}:{{port}}/movies/1",
 							"host": [
-								"ry-fsnd-capstone",
-								"herokuapp",
-								"com"
+								"{{host}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"movies",
 								"1"
@@ -465,13 +434,11 @@
 							}
 						},
 						"url": {
-							"raw": "https://ry-fsnd-capstone.herokuapp.com/movies",
-							"protocol": "https",
+							"raw": "{{host}}:{{port}}/movies",
 							"host": [
-								"ry-fsnd-capstone",
-								"herokuapp",
-								"com"
+								"{{host}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"movies"
 							]
@@ -494,13 +461,11 @@
 							}
 						},
 						"url": {
-							"raw": "https://ry-fsnd-capstone.herokuapp.com/movies/18",
-							"protocol": "https",
+							"raw": "{{host}}:{{port}}/movies/18",
 							"host": [
-								"ry-fsnd-capstone",
-								"herokuapp",
-								"com"
+								"{{host}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"movies",
 								"18"
@@ -515,13 +480,11 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://ry-fsnd-capstone.herokuapp.com/movies/18",
-							"protocol": "https",
+							"raw": "{{host}}:{{port}}/movies/18",
 							"host": [
-								"ry-fsnd-capstone",
-								"herokuapp",
-								"com"
+								"{{host}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"movies",
 								"18"
@@ -545,7 +508,6 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "a71a4e55-fd6c-4dc9-91e4-b34c9ae31e49",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -555,15 +517,13 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "a5b66224-b023-4d35-9d0a-d536aa81674e",
 						"type": "text/javascript",
 						"exec": [
 							""
 						]
 					}
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Admin",
@@ -574,13 +534,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://ry-fsnd-capstone.herokuapp.com/actors",
-							"protocol": "https",
+							"raw": "{{host}}:{{port}}/actors",
 							"host": [
-								"ry-fsnd-capstone",
-								"herokuapp",
-								"com"
+								"{{host}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"actors"
 							]
@@ -594,13 +552,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://ry-fsnd-capstone.herokuapp.com/actors/1",
-							"protocol": "https",
+							"raw": "{{host}}:{{port}}/actors/1",
 							"host": [
-								"ry-fsnd-capstone",
-								"herokuapp",
-								"com"
+								"{{host}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"actors",
 								"1"
@@ -624,13 +580,11 @@
 							}
 						},
 						"url": {
-							"raw": "https://ry-fsnd-capstone.herokuapp.com/actors",
-							"protocol": "https",
+							"raw": "{{host}}:{{port}}/actors",
 							"host": [
-								"ry-fsnd-capstone",
-								"herokuapp",
-								"com"
+								"{{host}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"actors"
 							]
@@ -653,13 +607,11 @@
 							}
 						},
 						"url": {
-							"raw": "https://ry-fsnd-capstone.herokuapp.com/actors/39",
-							"protocol": "https",
+							"raw": "{{host}}:{{port}}/actors/39",
 							"host": [
-								"ry-fsnd-capstone",
-								"herokuapp",
-								"com"
+								"{{host}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"actors",
 								"39"
@@ -674,13 +626,11 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://ry-fsnd-capstone.herokuapp.com/actors/39",
-							"protocol": "https",
+							"raw": "{{host}}:{{port}}/actors/39",
 							"host": [
-								"ry-fsnd-capstone",
-								"herokuapp",
-								"com"
+								"{{host}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"actors",
 								"39"
@@ -695,13 +645,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://ry-fsnd-capstone.herokuapp.com/movies",
-							"protocol": "https",
+							"raw": "{{host}}:{{port}}/movies",
 							"host": [
-								"ry-fsnd-capstone",
-								"herokuapp",
-								"com"
+								"{{host}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"movies"
 							]
@@ -715,13 +663,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://ry-fsnd-capstone.herokuapp.com/movies/1",
-							"protocol": "https",
+							"raw": "{{host}}:{{port}}/movies/1",
 							"host": [
-								"ry-fsnd-capstone",
-								"herokuapp",
-								"com"
+								"{{host}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"movies",
 								"1"
@@ -745,13 +691,11 @@
 							}
 						},
 						"url": {
-							"raw": "https://ry-fsnd-capstone.herokuapp.com/movies",
-							"protocol": "https",
+							"raw": "{{host}}:{{port}}/movies",
 							"host": [
-								"ry-fsnd-capstone",
-								"herokuapp",
-								"com"
+								"{{host}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"movies"
 							]
@@ -774,13 +718,11 @@
 							}
 						},
 						"url": {
-							"raw": "https://ry-fsnd-capstone.herokuapp.com/movies/19",
-							"protocol": "https",
+							"raw": "{{host}}:{{port}}/movies/19",
 							"host": [
-								"ry-fsnd-capstone",
-								"herokuapp",
-								"com"
+								"{{host}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"movies",
 								"19"
@@ -795,13 +737,11 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://ry-fsnd-capstone.herokuapp.com/movies/19",
-							"protocol": "https",
+							"raw": "{{host}}:{{port}}/movies/19",
 							"host": [
-								"ry-fsnd-capstone",
-								"herokuapp",
-								"com"
+								"{{host}}"
 							],
+							"port": "{{port}}",
 							"path": [
 								"movies",
 								"19"
@@ -825,7 +765,6 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "fd3f88a9-5c03-44e5-9074-b5baba29928b",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -835,15 +774,13 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "bb599570-5c22-4993-93dc-b86e6a17ab0f",
 						"type": "text/javascript",
 						"exec": [
 							""
 						]
 					}
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Health",
@@ -851,17 +788,46 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://ry-fsnd-capstone.herokuapp.com",
-					"protocol": "https",
+					"raw": "{{host}}:{{port}}",
 					"host": [
-						"ry-fsnd-capstone",
-						"herokuapp",
-						"com"
-					]
+						"{{host}}"
+					],
+					"port": "{{port}}"
 				}
 			},
 			"response": []
 		}
 	],
-	"protocolProfileBehavior": {}
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "http://localhost",
+			"type": "default"
+		},
+		{
+			"key": "port",
+			"value": "5000",
+			"type": "default"
+		}
+	]
 }
