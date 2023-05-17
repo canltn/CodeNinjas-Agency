@@ -1,11 +1,19 @@
+
+from dotenv import load_dotenv
 from sqlalchemy import Column, String, Integer, ForeignKey, Float, Date
 from flask_sqlalchemy import SQLAlchemy
 import os
 
-# database_name = "capstone"
-# database_path = "postgres://{}:{}@{}/{}".format(
-#     'postgres', 'root', 'localhost:5432', database_name)
-database_path = os.environ['DATABASE_URL']
+basedir = os.path.abspath(os.path.dirname(__file__))
+load_dotenv(os.path.join(basedir, '.env'))
+
+
+# Get track modification from the environment variable
+SQLALCHEMY_TRACK_MODIFICATIONS = os.environ.get(
+    'SQLALCHEMY_TRACK_MODIFICATIONS') == 'True'
+
+# Get the database URL from the environment variable
+database_path = os.environ.get('DATABASE_URL')
 
 db = SQLAlchemy()
 
