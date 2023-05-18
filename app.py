@@ -1,8 +1,8 @@
 from flask import Flask, request, abort, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
-from .database.models import db_drop_and_create_all, setup_db, Actor, Movie
-from .auth.auth import AuthError, requires_auth
+from database.models import setup_db, Actor, Movie
+from auth.auth import requires_auth
 
 
 def create_app(test_config=None):
@@ -24,7 +24,7 @@ def create_app(test_config=None):
                              'GET, POST, PATCH, DELETE, OPTIONS')
         return response
 
-    @app.route('/')
+    @app.route('/health')
     def health():
         return jsonify({'health': 'Running!!'}), 200
 
