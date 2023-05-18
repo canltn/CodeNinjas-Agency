@@ -41,8 +41,25 @@ actor_in_movie = db.Table(
     Column('movie_id', Integer, ForeignKey('movies.id'), primary_key=True)
 )
 
+'''
+Extend the base Model class to add common methods
+'''
+class BaseModel(db.Model):
+    __abstract__ = True
 
-class Movie(db.Model):
+    def insert(self):
+        db.session.add(self)
+        db.session.commit()
+
+    def delete(self):
+        db.session.delete(self)
+        db.session.commit()
+
+    def update(self):
+        db.session.commit()
+
+
+class Movie(BaseModel):
     __tablename__ = "movies"
 
     id = Column(Integer, primary_key=True)
@@ -58,17 +75,6 @@ class Movie(db.Model):
         self.release_year = release_year
         self.duration = duration
         self.imdb_rating = imdb_rating
-
-    def insert(self):
-        db.session.add(self)
-        db.session.commit()
-
-    def delete(self):
-        db.session.delete(self)
-        db.session.commit()
-
-    def update(self):
-        db.session.commit()
 
     def short(self):
         return {
@@ -99,7 +105,7 @@ class Movie(db.Model):
                                               self.imdb_rating, self.duration)
 
 
-class Actor(db.Model):
+class Actor(BaseModel):
     __tablename__ = "actors"
 
     id = Column(Integer, primary_key=True)
@@ -111,17 +117,6 @@ class Actor(db.Model):
         self.name = name
         self.full_name = full_name
         self.date_of_birth = date_of_birth
-
-    def insert(self):
-        db.session.add(self)
-        db.session.commit()
-
-    def delete(self):
-        db.session.delete(self)
-        db.session.commit()
-
-    def update(self):
-        db.session.commit()
 
     def short(self):
         return {

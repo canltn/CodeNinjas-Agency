@@ -1,13 +1,16 @@
 import json
+import os
+from dotenv import load_dotenv
 from flask import request, abort
 from functools import wraps
 
 from jose import jwt
 from urllib.request import urlopen
-
-AUTH0_DOMAIN = 'dev-znufqirkws7isg6q.us.auth0.com'
-ALGORITHMS = ['RS256']
-API_AUDIENCE = 'http://localhost:5000'
+basedir = os.path.abspath(os.path.dirname(__file__))
+load_dotenv(os.path.join(basedir, '.env'))
+AUTH0_DOMAIN = os.environ.get('AUTH0_DOMAIN')
+ALGORITHMS = [os.environ.get('ALGORITHMS')]
+API_AUDIENCE = os.environ.get('API_AUDIENCE')
 
 
 # AuthError Exception

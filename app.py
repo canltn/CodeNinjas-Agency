@@ -1,4 +1,10 @@
-from flask import Flask, request, abort, jsonify
+import sys
+from flask import (
+    Flask, 
+    request,
+    abort,
+    jsonify
+)
 from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
 from database.models import setup_db, Actor, Movie
@@ -117,7 +123,8 @@ def create_app(test_config=None):
             }), 200
 
         except (TypeError, ValueError, KeyError):
-            abort(422)
+             print(sys.exc_info())
+             abort(422)
 
         except Exception:
             abort(500)

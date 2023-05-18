@@ -50,12 +50,19 @@ Before running the application locally, make the following changes in the `app.p
 
 To run the server, execute:
 
+### On Linux
 ```bash
-export DATABASE_URL=<database-connection-url>
 export FLASK_APP=app.py
+export DATABASE_URL=<database-connection-url>
 flask run --reload
 ```
 
+### On Windows
+```bash
+set FLASK_APP=app.py
+set DATABASE_URL=<database-connection-url>
+flask run --reload
+```
 Setting the `FLASK_APP` variable to `app.py` directs flask to use the `app.py` file to find the application. 
 
 Using the `--reload` flag will detect file changes and restart the server automatically.
